@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise !</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="./style/css/styles.css">
+<style>
+        .outlined-text {
+            font-size: 69px;
+            color: white; /* Couleur du texte principal */
+            -webkit-text-stroke: 2px black; /* Contour noir de 2 pixels */
+        }
+    </style>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://pbs.twimg.com/media/F1u9fQSaAAA-oJS?format=jpg&name=large');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white"> 
+  <div class="w3-display-middle">
+    <h1 class="outlined-text w3-animate-top">Veux-tu une surprise ?</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">pour ma princesse <3</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+<div class = "buttons">
+        <button class="btn" id= "yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onclick="moveButton()">No</button>
+        <script>
+          function nextPage() {
+           window.location.href = "secret_word.html";
+                    }
+           function moveButton() {
+           var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+           var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+              document.getElementById('noButton').style.left = `${x}px`;
+              document.getElementById('noButton').style.top = `${y}px`;
+                    }
+        </script> 
+        </script>
+    <div>
+</body>
+</html>
